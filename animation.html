@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body { background-color: #f1f0ff; }
+
+        #animation {
+            background-image: url("ciclo-animacao.png");
+            width: 75px;
+            height: 130px;
+            -webkit-animation: ciclo-animacao 1.0s steps(9) infinite;
+            animation: ciclo-animacao 1.0s steps(9) infinite;
+        }
+
+        @-webkit-keyframes ciclo-animacao{
+            from {background-position: 0px; }
+            to { background-position: -710px; }
+        }
+
+        @keyframes ciclo-animacao {
+            from { background-position: 0px; }
+            to {background-position: -710px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="animation"></div>
+    
+</body>
+</html>
